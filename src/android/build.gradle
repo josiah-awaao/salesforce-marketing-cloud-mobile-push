@@ -49,6 +49,7 @@ android {
         buildConfigField "String", "MC_SENDER_ID", MC_SENDER_ID
         buildConfigField "String", "MC_MID", MC_MID
         buildConfigField "String", "MC_SERVER_URL", MC_SERVER_URL
+        buildConfigField "String", "MC_APP_PACKAGE_NAME", MC_APP_PACKAGE_NAME
     }
 }
 
