@@ -27,7 +27,7 @@ abstract class BaseApplication : Application(), UrlHandler {
 
     override fun handleUrl(context: Context, url: String, urlSource: String): PendingIntent? {
 
-        print("kotlin url handler")
+        println("kotlin url handler")
 
         return PendingIntent.getActivity(
             context,
