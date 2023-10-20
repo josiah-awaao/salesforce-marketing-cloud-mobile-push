@@ -33,7 +33,7 @@ class MainApplication : BaseApplication() {
                             PendingIntent.getActivity(
                                 context,
                                 Random().nextInt(),
-                                    getPackageManager().getLaunchIntentForPackage(BuildConfig.MC_APP_PACKAGE_NAME)
+                                    getPackageManager().getLaunchIntentForPackage(BuildConfig.MC_APP_PACKAGE_NAME),
 //                                    if(notificationMessage.url.isNullOrEmpty()) getPackageManager().getLaunchIntentForPackage(BuildConfig.MC_APP_PACKAGE_NAME) else Intent(Intent.ACTION_VIEW, Uri.parse(notificationMessage.url)),
                                 PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
                             ),
