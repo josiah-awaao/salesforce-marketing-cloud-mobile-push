@@ -29,8 +29,7 @@ abstract class BaseApplication : Application(), UrlHandler {
         return PendingIntent.getActivity(
             context,
             1,
-//            Intent(Intent.ACTION_VIEW, Uri.parse(url)),
-            getPackageManager().getLaunchIntentForPackage(BuildConfig.MC_APP_PACKAGE_NAME),
+            Intent(Intent.ACTION_VIEW, Uri.parse(url)),
             PendingIntent.FLAG_IMMUTABLE
         )
     }
