@@ -26,13 +26,7 @@ abstract class BaseApplication : Application(), UrlHandler {
     }
 
     override fun handleUrl(context: Context, url: String, urlSource: String): PendingIntent? {
-
-        println("kotlin url handler")
         Log.v("debug-url","kotlin url handler")
-        Log.e("debug-url","kotlin url handler")
-        Log.d("debug-url","kotlin url handler")
-
-
         return PendingIntent.getActivity(
             context,
             1,
